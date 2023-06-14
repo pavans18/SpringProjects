@@ -1,0 +1,20 @@
+spring:
+  datasource:
+    url: jdbc:oracle:thin:@localhost:1521/xe
+    driver-class-name: oracle.jdbc.OracleDriver
+    username: sys as sysdba
+    password: admin@123
+    
+  jpa:
+   showsql: true
+   hibernate:
+    ddl-auto: create
+    
+  mvc:
+   view:
+     prefix: /WEB-INF/jsp/
+     suffix: .jsp
+
+debug: true
+server:
+  port: 8081
